@@ -5,7 +5,7 @@
 # Sahil Chand Rajwar
 ### 🛡️ Cybersecurity Developer  •  🤖 AI Builder  •  ⚙️ Security Automation
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&pause=900&color=00D9FF&center=true&vCenter=true&width=750&lines=Cybersecurity+%7C+SOC+%7C+AI+Automation;Building+Real+Security+Projects;IDS+%7C+SOAR+%7C+Threat+Detection;Python+%7C+FastAPI+%7C+React+%7C+TypeScript;Build+%E2%80%A2+Break+%E2%80%A2+Detect+%E2%80%A2+Defend" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&pause=800&color=00D9FF&center=true&vCenter=true&width=780&lines=Cybersecurity+%7C+SOC+%7C+AI+Automation;Building+Practical+Security+Systems;IDS+%7C+SOAR+%7C+Threat+Detection;Python+%7C+FastAPI+%7C+React+%7C+TypeScript;Build+%E2%80%A2+Break+%E2%80%A2+Detect+%E2%80%A2+Defend" alt="Typing animation" />
 
 <a href="https://www.linkedin.com/in/sahil-chand-rajwar"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
@@ -16,7 +16,7 @@
 
 ## 👨‍💻 About Me
 
-I'm a **B.Tech Cyber Security student and hands-on developer** focused on building practical security systems instead of only theoretical demos.
+I'm a **B.Tech Cyber Security student and hands-on developer** focused on building practical security systems rather than only theoretical demos.
 
 - 🔐 Cybersecurity, SOC & detection engineering
 - 🚨 IDS / SOAR / incident-response workflows
@@ -29,47 +29,45 @@ I'm a **B.Tech Cyber Security student and hands-on developer** focused on buildi
 
 ---
 
-## ⚡ What I Build
-
-```text
-                         ┌───────────────────────┐
-                         │   SECURITY ENGINEERING │
-                         └───────────┬───────────┘
-                                     │
-              ┌──────────────────────┼──────────────────────┐
-              ▼                      ▼                      ▼
-        🕵️ DETECTION          🚨 RESPONSE              🤖 AI
-        Network IDS           SOAR / Playbooks        AI Agents
-        Anomaly Detection     Incident Workflow       Automation
-        Threat Analysis       Risk Scoring             Voice / Tools
-              │                      │                      │
-              └──────────────────────┼──────────────────────┘
-                                     ▼
-                           🛡️ DEFENSIVE SYSTEMS
-```
-
----
-
 ## 🚀 Featured Projects
 
 | Project | What it does | Stack |
 |---|---|---|
-| 🛡️ **SecureLearn Cyber Lab** | AI-powered phishing detection & security-awareness simulator | Python • Flask • ML • SQLite |
+| 🌿 **PackIntel-AI** | AI-powered food packaging material recommendation using Hybrid RAG | Python • FastAPI • AI/RAG • Web |
+| 🛡️ **SecureLearn Cyber Lab** | Phishing detection & cybersecurity-awareness simulator | Python • Flask • ML • SQLite |
 | 🛰️ **Advanced Network IDS** | Packet capture, intrusion detection, correlation & SOC dashboard | Python • FastAPI • Scapy • React |
 | 🚨 **SentinelFlow SOAR** | Alert → TI → risk → playbook → response → audit workflow | FastAPI • React • PostgreSQL • Docker |
 | 🤖 **NEXA AI** | Windows AI agent with controlled automation, memory & tools | Python • FastAPI • Electron • React |
-| 🔐 **AES Encryption Project** | AES-based encryption implementation project | Python / Cryptography |
+| 🔐 **AES Encryption** | AES-based file encryption and password-protected decryption | Python • Cryptography |
 
 <div align="center">
 
-<a href="https://github.com/wwwsahilchand123-maker/SecureLearn-Cyber-Lab"><img src="https://img.shields.io/badge/🛡️_SecureLearn-Repository-111827?style=for-the-badge" /></a>
-<a href="https://github.com/wwwsahilchand123-maker/Advanced-Network-IDS"><img src="https://img.shields.io/badge/🛰️_Network_IDS-Repository-111827?style=for-the-badge" /></a>
-<a href="https://github.com/wwwsahilchand123-maker/SentinelFlow-SOAR"><img src="https://img.shields.io/badge/🚨_SentinelFlow-Repository-111827?style=for-the-badge" /></a>
-<a href="https://github.com/wwwsahilchand123-maker/Nexa-Ai-like-jarvis"><img src="https://img.shields.io/badge/🤖_NEXA_AI-Repository-111827?style=for-the-badge" /></a>
+[![PackIntel](https://img.shields.io/badge/🌿_PackIntel--AI-Explore-42E8A3?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/PackIntel-AI)
+[![SecureLearn](https://img.shields.io/badge/🛡️_SecureLearn-Explore-00D9FF?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/SecureLearn-Cyber-Lab)
+[![Network IDS](https://img.shields.io/badge/🛰️_Network_IDS-Explore-8B7CFF?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/Advanced-Network-IDS)
+[![SentinelFlow](https://img.shields.io/badge/🚨_SentinelFlow-Explore-42E8A3?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/SentinelFlow-SOAR)
+[![NEXA](https://img.shields.io/badge/🤖_NEXA_AI-Explore-00D9FF?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/Nexa-Ai-like-jarvis)
+[![AES](https://img.shields.io/badge/🔐_AES-Explore-8B7CFF?style=for-the-badge)](https://github.com/wwwsahilchand123-maker/AES-Encryption-Project)
 
 </div>
 
 ---
+
+## 🧠 What I Build
+
+```text
+                         SECURITY ENGINEERING
+                                  │
+             ┌────────────────────┼────────────────────┐
+             ▼                    ▼                    ▼
+        🕵️ DETECTION         🚨 RESPONSE             🤖 AI
+        Network IDS          SOAR / Playbooks       AI Agents
+        Threat Analysis      Incident Workflow      Automation
+             │                    │                    │
+             └────────────────────┼────────────────────┘
+                                  ▼
+                         🛡️ DEFENSIVE SYSTEMS
+```
 
 ## 🧰 Tech Stack
 
@@ -79,41 +77,13 @@ I'm a **B.Tech Cyber Security student and hands-on developer** focused on buildi
 
 </div>
 
-### 🔐 Security Focus
+### 🔐 Focus Areas
 
-`Network IDS` `SOC` `SOAR` `Threat Intelligence` `MITRE ATT&CK` `Incident Response` `Risk Scoring` `Phishing Detection` `Security Automation`
-
----
-
-## 🧠 Security Workflow
-
-```text
-Telemetry
-   ↓
-Detection
-   ↓
-Normalization
-   ↓
-Correlation
-   ↓
-Threat Intelligence
-   ↓
-Risk Scoring
-   ↓
-Automation / Playbook
-   ↓
-Human Approval
-   ↓
-Response
-   ↓
-Incident Timeline
-   ↓
-Audit
-```
+`Cybersecurity` `SOC` `Network IDS` `SOAR` `Threat Intelligence` `MITRE ATT&CK` `Incident Response` `Risk Scoring` `Phishing Detection` `Security Automation` `AI Agents`
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Activity
 
 <div align="center">
 
@@ -128,25 +98,9 @@ Audit
 
 ---
 
-## 🐍 Contribution Graph
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D contribution graph" />
-
-</div>
-
----
-
 ## 🎯 2026 Focus
 
-```text
-Cybersecurity Engineering    ███████████████████░  95%
-SOC / Detection Engineering  █████████████████░░░  85%
-SOAR & Automation            ████████████████░░░░  80%
-AI Agents                    ███████████████░░░░░  75%
-Cloud / DevSecOps            ████████████░░░░░░░░  60%
-```
+`Cybersecurity Engineering` · `SOC / Detection Engineering` · `SOAR & Automation` · `AI Agents` · `Cloud / DevSecOps`
 
 ---
 
@@ -155,7 +109,7 @@ Cloud / DevSecOps            ████████████░░░░░
 <div align="center">
 
 <a href="https://www.linkedin.com/in/sahil-chand-rajwar"><img src="https://img.shields.io/badge/Sahil_Chand_Rajwar-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/wwwsahilchand123--maker-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/GitHub-wwwsahilchand123--maker-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 <br/><br/>
 
