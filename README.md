@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&section=header&text=SAHIL%20CHAND&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=CYBERSECURITY%20%7C%20AI%20%7C%20SECURITY%20AUTOMATION&descAlignY=61&descSize=16&animation=fadeIn&color=0:020617,45:0b2942,75:0f766e,100:020617" width="100%" />
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/profile-banner.svg" width="100%" alt="Sahil Chand — Cybersecurity • AI • Security Automation" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2600&pause=850&color=42E8A3&center=true&vCenter=true&width=900&lines=Cybersecurity+Developer;SOC+%2F+Detection+Engineering;IDS+%2F+SOAR+%2F+Threat+Intelligence;AI+Agents+%2F+Security+Automation;Build+%E2%80%A2+Detect+%E2%80%A2+Defend+%E2%80%A2+Automate" alt="Typing animation" />
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2600&pause=900&color=42E8A3&center=true&vCenter=true&width=850&lines=Cybersecurity+Developer;Detection+%2F+SOC+Engineering;IDS+%2F+SOAR+%2F+Threat+Intelligence;AI+Agents+%2F+Security+Automation;Build+%E2%80%A2+Detect+%E2%80%A2+Defend+%E2%80%A2+Automate" alt="Animated role line" />
 
 <br>
 
@@ -12,140 +14,163 @@
 
 </div>
 
-<br>
+---
 
-## 👨‍💻 About Me
+## 👋 About Me
 
-> **B.Tech Cyber Security student building security-focused software and AI systems.**
->
-> I enjoy turning security concepts into working projects — from network detection and incident response to AI agents and intelligent automation.
+**B.Tech Cyber Security student building practical cybersecurity and AI systems.**
+
+I like turning security concepts into working software — detection, SOC workflows, threat intelligence, automation and AI-powered tools.
 
 <div align="center">
 
-| 🛡️ SECURITY | 🤖 AI | ⚙️ BUILDING |
+| 🛡️ SECURITY | 🤖 AI | ⚙️ ENGINEERING |
 |:---:|:---:|:---:|
 | Network Security | AI Agents | Python |
-| Detection Engineering | Automation | FastAPI |
-| SOC / SOAR | Intelligent Tools | React / TypeScript |
-| Threat Intelligence | RAG Systems | Linux / Docker |
+| Detection Engineering | RAG | FastAPI |
+| SOC / SOAR | Automation | React / TypeScript |
+| Threat Intelligence | Intelligent Tools | Linux / Docker |
 
 </div>
 
 ---
 
-## 🚀 Featured Work
+# 🚀 Featured Projects
+
+> **Projects are ordered by cybersecurity relevance and technical depth.**
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### 01 · 🛰️ Advanced Network IDS
-**Network telemetry → Detection → Risk scoring → SOC alerts**
+**Telemetry → Detection → Risk → Alert**
 
-A security monitoring system focused on packet/flow analysis, detection logic, event correlation and a dashboard for security events.
+Network monitoring and intrusion-detection project covering packet/flow analysis, detection logic, event correlation, risk scoring and SOC-style visualization.
 
 `Python` `FastAPI` `Scapy` `React`
 
-<a href="https://github.com/wwwsahilchand123-maker/Advanced-Network-IDS">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/Advanced-Network-IDS">View Repository →</a>
 
----
+</td>
+<td width="50%" valign="top">
 
 ### 02 · 🚨 SentinelFlow SOAR
-**Alert → Threat Intelligence → Risk → Playbook → Response → Audit**
+**Alert → TI → Risk → Playbook → Response → Audit**
 
-A full-stack Security Orchestration, Automation and Response platform concept with incidents, automation workflows, approvals and audit trails.
+Security orchestration concept for incident workflows, threat intelligence, approvals, automated playbooks and audit trails.
 
 `FastAPI` `React` `PostgreSQL` `Docker`
 
-<a href="https://github.com/wwwsahilchand123-maker/SentinelFlow-SOAR">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/SentinelFlow-SOAR">View Repository →</a>
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### 03 · 🤖 NEXA AI
 **Listen → Think → Act → Report**
 
-A Windows-focused AI-agent foundation combining memory, file intelligence, browser automation and permission-aware tools.
+Windows-focused AI-agent foundation with memory, file intelligence, browser automation and permission-aware tools.
 
 `Python` `FastAPI` `Electron` `React`
 
-<a href="https://github.com/wwwsahilchand123-maker/Nexa-Ai-like-jarvis">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/Nexa-Ai-like-jarvis">View Repository →</a>
 
----
+</td>
+<td width="50%" valign="top">
 
 ### 04 · 🛡️ SecureLearn Cyber Lab
 **Analyze → Predict → Learn**
 
-An interactive cybersecurity learning platform with phishing analysis, ML classification, awareness simulations and security quizzes.
+Cybersecurity learning platform combining phishing analysis, ML classification, awareness simulations and security quizzes.
 
-`Python` `Flask` `Machine Learning` `SQLite`
+`Python` `Flask` `ML` `SQLite`
 
-<a href="https://github.com/wwwsahilchand123-maker/SecureLearn-Cyber-Lab">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/SecureLearn-Cyber-Lab">View Repository →</a>
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### 05 · 🌿 PackIntel-AI
 **Retrieve → Score → Explain → Compare**
 
-An AI-assisted recommendation system exploring intelligent food-packaging material selection with retrieval and explainable scoring.
+AI-assisted recommendation system for food-packaging material selection using retrieval and explainable scoring.
 
 `Python` `FastAPI` `RAG` `AI`
 
-<a href="https://github.com/wwwsahilchand123-maker/PackIntel-AI">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/PackIntel-AI">View Repository →</a>
 
----
+</td>
+<td width="50%" valign="top">
 
-### 06 · 🔐 AES Encryption Project
+### 06 · 🔐 AES Encryption
 **Encrypt → Protect → Decrypt**
 
-A desktop cryptography learning project exploring AES-based file protection and secure encryption workflows.
+Desktop cryptography learning project exploring AES-based file protection workflows.
 
 `Python` `AES` `Tkinter` `PyCryptodome`
 
-<a href="https://github.com/wwwsahilchand123-maker/AES-Encryption-Project">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/AES-Encryption-Project">View Repository →</a>
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### 07 · 🌦️ WeatherNova
 **Search → Analyze → Forecast → Understand**
 
-A cinematic real-time weather dashboard with animated atmospheric visuals, live conditions, hourly & 7-day forecasts, air quality, smart insights, sunrise/sunset, maps and responsive glassmorphism UI.
+Animated real-time weather dashboard with live conditions, forecasts, air quality, maps, smart insights and responsive glass UI.
 
-`HTML5` `CSS3` `Vanilla JavaScript` `Open-Meteo` `OpenStreetMap`
+`HTML` `CSS` `JavaScript` `Open-Meteo`
 
-<a href="https://github.com/wwwsahilchand123-maker/weather-report-project-">View project →</a>
+<a href="https://github.com/wwwsahilchand123-maker/weather-report-project-">View Repository →</a>
 
-<div align="center">
+</td>
+<td width="50%" valign="top">
 
-<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/weather-report-project-/main/assets/weather-banner.svg" width="85%" alt="WeatherNova animated weather banner" />
+### ⭐ Profile Repository
+**Cybersecurity • AI • Security Automation**
 
-</div>
+This profile README is maintained as a living portfolio of security engineering work, experiments and learning.
+
+`GitHub` `Markdown` `SVG` `Open Source`
+
+<a href="https://github.com/wwwsahilchand123-maker/wwwsahilchand123-maker">View Profile Repo →</a>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🧠 Security × AI Architecture
+## 🧭 My Security Workflow
 
 ```text
-                    ┌─────────────────────┐
-                    │      TELEMETRY      │
-                    │  Network / Events   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-              ┌────────────────────────────────┐
-              │          DETECTION             │
-              │ IDS • Rules • ML • Correlation │
-              └───────────────┬────────────────┘
-                              │
-                              ▼
-              ┌────────────────────────────────┐
-              │        RESPONSE / SOAR         │
-              │ TI • Risk • Playbooks • Audit  │
-              └───────────────┬────────────────┘
-                              │
-                              ▼
-              ┌────────────────────────────────┐
-              │          AI + AUTOMATION       │
-              │ Agents • Tools • RAG • Memory  │
-              └───────────────┬────────────────┘
-                              │
-                              ▼
-                     🛡️ DEFENSIVE TECH
+       TELEMETRY / EVENTS
+               │
+               ▼
+      ┌──────────────────┐
+      │     DETECT       │  IDS • Rules • ML
+      └────────┬─────────┘
+               ▼
+      ┌──────────────────┐
+      │     ANALYZE      │  TI • Correlation • Risk
+      └────────┬─────────┘
+               ▼
+      ┌──────────────────┐
+      │     RESPOND      │  SOAR • Playbooks • Audit
+      └────────┬─────────┘
+               ▼
+      ┌──────────────────┐
+      │  AI + AUTOMATE   │  Agents • RAG • Tools
+      └────────┬─────────┘
+               ▼
+          🛡️ DEFEND
 ```
 
 ---
@@ -154,65 +179,51 @@ A cinematic real-time weather dashboard with animated atmospheric visuals, live 
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,flask,react,typescript,javascript,html,css,tailwind,vite,postgres,sqlite,docker,linux,git,github&perline=8" alt="Tech stack" />
+<img src="https://skillicons.dev/icons?i=python,fastapi,flask,react,typescript,javascript,html,css,tailwind,vite,postgres,sqlite,docker,linux,git,github&perline=8" alt="Technology stack" />
 
 <br><br>
 
-`Cybersecurity` · `SOC` · `Network Security` · `Threat Intelligence` · `MITRE ATT&CK` · `SOAR` · `AI Agents` · `Security Automation` · `Weather Intelligence`
+`Cybersecurity` · `SOC` · `Network Security` · `Threat Intelligence` · `MITRE ATT&CK` · `SOAR` · `AI Agents` · `RAG` · `Security Automation`
 
 </div>
 
 ---
 
-## 📊 GitHub Activity
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=wwwsahilchand123-maker&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wwwsahilchand123-maker&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=wwwsahilchand123-maker&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub statistics" />
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wwwsahilchand123-maker&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
 
 <br><br>
 
-<img src="https://streak-stats.demolab.com?user=wwwsahilchand123-maker&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com?user=wwwsahilchand123-maker&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
 
 </div>
 
 ---
 
-## 🎯 Current Focus
+## 🎯 Current Direction
 
-```text
-CYBERSECURITY
-├── Detection Engineering
-├── SOC & Incident Response
-├── Network Security
-└── Threat Intelligence
+| Area | Focus |
+|---|---|
+| 🛡️ Cybersecurity | Detection Engineering · SOC · Network Security |
+| 🚨 Response | SOAR · Incident Workflows · Threat Intelligence |
+| 🤖 AI | Agents · RAG · Tool-Oriented Systems |
+| ⚙️ Engineering | Python · FastAPI · React · Docker · Linux |
 
-AI + AUTOMATION
-├── AI Agents
-├── RAG / Intelligent Retrieval
-├── Security Automation
-└── Safer Tool-Oriented Workflows
-
-BUILDING
-└── Weather Intelligence Dashboard
-```
-
-> **Build systems that are explainable, testable and secure.**
+> **Engineering principle:** Build systems that are explainable, testable and secure.
 
 ---
 
 <div align="center">
 
-## 🔗 Let's Connect
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/profile-footer.svg" width="100%" alt="Build Detect Defend Automate" />
 
-<a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/GitHub-Explore%20My%20Work-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="https://www.linkedin.com/in/sahil-chand-rajwar"><img src="https://img.shields.io/badge/LinkedIn-Connect%20With%20Me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<br>
 
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:020617,45:0f766e,75:0b2942,100:020617&animation=fadeIn" width="100%" />
-
-**🛡️ BUILD · DETECT · DEFEND · AUTOMATE**
+<a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
+<a href="https://www.linkedin.com/in/sahil-chand-rajwar"><img src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" /></a>
 
 </div>
