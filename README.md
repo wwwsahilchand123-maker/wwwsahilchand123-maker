@@ -40,8 +40,7 @@ I like turning security concepts into working software — detection, SOC workfl
 > **Projects are ordered by cybersecurity relevance and technical depth.**
 
 <table>
-<tr>
-<td width="50%" valign="top">
+<tr><td width="50%" valign="top">
 
 ### 01 · 🛰️ Advanced Network IDS
 **Telemetry → Detection → Risk → Alert**
@@ -52,8 +51,7 @@ Network monitoring and intrusion-detection project covering packet/flow analysis
 
 <a href="https://github.com/wwwsahilchand123-maker/Advanced-Network-IDS">View Repository →</a>
 
-</td>
-<td width="50%" valign="top">
+</td><td width="50%" valign="top">
 
 ### 02 · 🚨 SentinelFlow SOAR
 **Alert → TI → Risk → Playbook → Response → Audit**
@@ -64,10 +62,8 @@ Security orchestration concept for incident workflows, threat intelligence, appr
 
 <a href="https://github.com/wwwsahilchand123-maker/SentinelFlow-SOAR">View Repository →</a>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+</td></tr>
+<tr><td width="50%" valign="top">
 
 ### 03 · 🤖 NEXA AI
 **Listen → Think → Act → Report**
@@ -78,8 +74,7 @@ Windows-focused AI-agent foundation with memory, file intelligence, browser auto
 
 <a href="https://github.com/wwwsahilchand123-maker/Nexa-Ai-like-jarvis">View Repository →</a>
 
-</td>
-<td width="50%" valign="top">
+</td><td width="50%" valign="top">
 
 ### 04 · 🛡️ SecureLearn Cyber Lab
 **Analyze → Predict → Learn**
@@ -90,10 +85,8 @@ Cybersecurity learning platform combining phishing analysis, ML classification, 
 
 <a href="https://github.com/wwwsahilchand123-maker/SecureLearn-Cyber-Lab">View Repository →</a>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+</td></tr>
+<tr><td width="50%" valign="top">
 
 ### 05 · 🌿 PackIntel-AI
 **Retrieve → Score → Explain → Compare**
@@ -104,8 +97,7 @@ AI-assisted recommendation system for food-packaging material selection using re
 
 <a href="https://github.com/wwwsahilchand123-maker/PackIntel-AI">View Repository →</a>
 
-</td>
-<td width="50%" valign="top">
+</td><td width="50%" valign="top">
 
 ### 06 · 🔐 AES Encryption
 **Encrypt → Protect → Decrypt**
@@ -116,10 +108,8 @@ Desktop cryptography learning project exploring AES-based file protection workfl
 
 <a href="https://github.com/wwwsahilchand123-maker/AES-Encryption-Project">View Repository →</a>
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+</td></tr>
+<tr><td width="50%" valign="top">
 
 ### 07 · 🌦️ WeatherNova
 **Search → Analyze → Forecast → Understand**
@@ -130,47 +120,45 @@ Animated real-time weather dashboard with live conditions, forecasts, air qualit
 
 <a href="https://github.com/wwwsahilchand123-maker/weather-report-project-">View Repository →</a>
 
-</td>
-<td width="50%" valign="top">
+</td><td width="50%" valign="top">
 
-### ⭐ Profile Repository
+### 08 · ⭐ Profile Repository
 **Cybersecurity • AI • Security Automation**
 
-This profile README is maintained as a living portfolio of security engineering work, experiments and learning.
+Living portfolio for security engineering projects, experiments and learning.
 
 `GitHub` `Markdown` `SVG` `Open Source`
 
-<a href="https://github.com/wwwsahilchand123-maker/wwwsahilchand123-maker">View Profile Repo →</a>
+<a href="https://github.com/wwwsahilchand123-maker/wwwsahilchand123-maker">View Repository →</a>
 
-</td>
-</tr>
+</td></tr>
 </table>
 
 ---
 
-## 🧭 My Security Workflow
+## 🧭 Security Workflow
 
 ```text
-       TELEMETRY / EVENTS
-               │
-               ▼
-      ┌──────────────────┐
-      │     DETECT       │  IDS • Rules • ML
-      └────────┬─────────┘
-               ▼
-      ┌──────────────────┐
-      │     ANALYZE      │  TI • Correlation • Risk
-      └────────┬─────────┘
-               ▼
-      ┌──────────────────┐
-      │     RESPOND      │  SOAR • Playbooks • Audit
-      └────────┬─────────┘
-               ▼
-      ┌──────────────────┐
-      │  AI + AUTOMATE   │  Agents • RAG • Tools
-      └────────┬─────────┘
-               ▼
-          🛡️ DEFEND
+TELEMETRY / EVENTS
+        │
+        ▼
+   ┌──────────┐
+   │  DETECT  │  IDS • Rules • ML
+   └────┬─────┘
+        ▼
+   ┌──────────┐
+   │ ANALYZE  │  TI • Correlation • Risk
+   └────┬─────┘
+        ▼
+   ┌──────────┐
+   │ RESPOND  │  SOAR • Playbooks • Audit
+   └────┬─────┘
+        ▼
+   ┌──────────┐
+   │ AI + AUTO│  Agents • RAG • Tools
+   └────┬─────┘
+        ▼
+      🛡️ DEFEND
 ```
 
 ---
@@ -178,28 +166,22 @@ This profile README is maintained as a living portfolio of security engineering 
 ## 🧰 Tech Stack
 
 <div align="center">
-
 <img src="https://skillicons.dev/icons?i=python,fastapi,flask,react,typescript,javascript,html,css,tailwind,vite,postgres,sqlite,docker,linux,git,github&perline=8" alt="Technology stack" />
-
 <br><br>
-
 `Cybersecurity` · `SOC` · `Network Security` · `Threat Intelligence` · `MITRE ATT&CK` · `SOAR` · `AI Agents` · `RAG` · `Security Automation`
-
 </div>
 
 ---
 
-## 📊 GitHub Contributions
+## 📈 Contribution Activity
 
 <div align="center">
 
 <a href="https://github.com/wwwsahilchand123-maker">
-<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg" width="100%" alt="GitHub contribution activity" />
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg" width="100%" alt="Live GitHub contribution activity" />
 </a>
 
-<br>
-
-**Live contribution data · automatically refreshed by GitHub Actions**
+**Live total · updated automatically every day by GitHub Actions**
 
 </div>
 
@@ -219,12 +201,8 @@ This profile README is maintained as a living portfolio of security engineering 
 ---
 
 <div align="center">
-
 <img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/profile-footer.svg" width="100%" alt="Build Detect Defend Automate" />
-
 <br>
-
 <a href="https://github.com/wwwsahilchand123-maker"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
 <a href="https://www.linkedin.com/in/sahil-chand-rajwar"><img src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" /></a>
-
 </div>
