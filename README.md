@@ -189,16 +189,17 @@ This profile README is maintained as a living portfolio of security engineering 
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Contributions
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=wwwsahilchand123-maker&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub statistics" />
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wwwsahilchand123-maker&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+<a href="https://github.com/wwwsahilchand123-maker">
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg" width="100%" alt="GitHub contribution activity" />
+</a>
 
-<br><br>
+<br>
 
-<img src="https://streak-stats.demolab.com?user=wwwsahilchand123-maker&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
+**Live contribution data · automatically refreshed by GitHub Actions**
 
 </div>
 
