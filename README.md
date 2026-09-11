@@ -181,7 +181,7 @@ TELEMETRY / EVENTS
 <img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg" width="100%" alt="Live GitHub contribution activity" />
 </a>
 
-**Live total · updated automatically every day by GitHub Actions**
+**Live total · automatically refreshed by GitHub Actions**
 
 </div>
 
