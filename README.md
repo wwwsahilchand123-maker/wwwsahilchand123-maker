@@ -101,6 +101,23 @@ A desktop cryptography learning project exploring AES-based file protection and 
 
 ---
 
+### 07 · 🌦️ WeatherNova
+**Search → Analyze → Forecast → Understand**
+
+A cinematic real-time weather dashboard with animated atmospheric visuals, live conditions, hourly & 7-day forecasts, air quality, smart insights, sunrise/sunset, maps and responsive glassmorphism UI.
+
+`HTML5` `CSS3` `Vanilla JavaScript` `Open-Meteo` `OpenStreetMap`
+
+<a href="https://github.com/wwwsahilchand123-maker/weather-report-project-">View project →</a>
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/weather-report-project-/main/assets/weather-banner.svg" width="85%" alt="WeatherNova animated weather banner" />
+
+</div>
+
+---
+
 ## 🧠 Security × AI Architecture
 
 ```text
@@ -141,7 +158,7 @@ A desktop cryptography learning project exploring AES-based file protection and 
 
 <br><br>
 
-`Cybersecurity` · `SOC` · `Network Security` · `Threat Intelligence` · `MITRE ATT&CK` · `SOAR` · `AI Agents` · `Security Automation`
+`Cybersecurity` · `SOC` · `Network Security` · `Threat Intelligence` · `MITRE ATT&CK` · `SOAR` · `AI Agents` · `Security Automation` · `Weather Intelligence`
 
 </div>
 
@@ -176,6 +193,9 @@ AI + AUTOMATION
 ├── RAG / Intelligent Retrieval
 ├── Security Automation
 └── Safer Tool-Oriented Workflows
+
+BUILDING
+└── Weather Intelligence Dashboard
 ```
 
 > **Build systems that are explainable, testable and secure.**
