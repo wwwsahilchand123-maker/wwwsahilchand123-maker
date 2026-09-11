@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 180" role="img" aria-label="Build detect defend automate">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#020617"/><stop offset=".5" stop-color="#0f766e"/><stop offset="1" stop-color="#020617"/></linearGradient></defs>
+<rect width="1400" height="180" rx="28" fill="url(#g)"/>
+<path d="M0 120 Q180 65 360 120 T720 120 T1080 120 T1400 120" fill="none" stroke="#42e8a3" stroke-opacity=".45" stroke-width="2"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M0 120 Q180 65 360 120 T720 120 T1080 120 T1400 120;M0 120 Q180 175 360 120 T720 120 T1080 120 T1400 120;M0 120 Q180 65 360 120 T720 120 T1080 120 T1400 120"/></path>
+<text x="700" y="92" text-anchor="middle" fill="#fff" font-family="monospace" font-size="28" font-weight="800" letter-spacing="5">BUILD • DETECT • DEFEND • AUTOMATE</text>
+<circle cx="610" cy="125" r="4" fill="#42e8a3"><animate attributeName="r" values="3;7;3" dur="1.5s" repeatCount="indefinite"/></circle><circle cx="790" cy="125" r="4" fill="#42e8a3"><animate attributeName="r" values="3;7;3" dur="1.5s" begin=".75s" repeatCount="indefinite"/></circle>
+</svg>
