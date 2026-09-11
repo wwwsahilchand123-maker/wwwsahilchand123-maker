@@ -1,0 +1,72 @@
+name: Update Contribution Card
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch GitHub contribution data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          USERNAME: wwwsahilchand123-maker
+        run: |
+          curl -sS -H "Authorization: bearer $GH_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"query":"query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount color}}}}}}","variables":{"login":"'"$USERNAME"'"}}' \
+            https://api.github.com/graphql > contribution-data.json
+
+      - name: Render contribution SVG
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime
+
+          data = json.loads(Path('contribution-data.json').read_text())
+          if 'errors' in data:
+              raise SystemExit('GitHub GraphQL error: ' + json.dumps(data['errors']))
+          cal = data['data']['user']['contributionsCollection']['contributionCalendar']
+          total = cal['totalContributions']
+          days = [d for w in cal['weeks'] for d in w['contributionDays']]
+
+          def esc(s):
+              return str(s).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
+
+          rects = []
+          for i, d in enumerate(days[-371:]):
+              x = 40 + (i % 53) * 15
+              y = 70 + (i // 53) * 15
+              rects.append(f'<rect x="{x}" y="{y}" width="11" height="11" rx="2" fill="{d["color"]}"><title>{esc(d["date"])}: {d["contributionCount"]} contributions</title></rect>')
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="205" viewBox="0 0 900 205">
+          <rect width="900" height="205" rx="20" fill="#0d1117"/>
+          <rect x="1" y="1" width="898" height="203" rx="20" fill="none" stroke="#30363d"/>
+          <text x="40" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">GitHub Contributions</text>
+          <text x="40" y="59" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="14">{total} contributions in the last year</text>
+          {''.join(rects)}
+          <text x="40" y="194" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">Less</text>
+          <rect x="75" y="184" width="11" height="11" rx="2" fill="#161b22"/><rect x="91" y="184" width="11" height="11" rx="2" fill="#0e4429"/><rect x="107" y="184" width="11" height="11" rx="2" fill="#006d32"/><rect x="123" y="184" width="11" height="11" rx="2" fill="#26a641"/><rect x="139" y="184" width="11" height="11" rx="2" fill="#39d353"/>
+          <text x="158" y="194" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">More</text>
+          </svg>'''
+          Path('assets/contributions.svg').write_text(svg)
+          PY
+
+      - name: Commit updated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contributions.svg
+          git diff --cached --quiet || git commit -m "chore: update contribution card"
+          git push
