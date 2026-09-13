@@ -35,6 +35,18 @@ I like turning security concepts into working software — detection, SOC workfl
 
 ---
 
+## 🧠 What I Build
+
+```text
+Security telemetry ──► Detection ──► Risk analysis ──► Response
+        │                  │              │                │
+        └────────────── AI + Automation + Threat Intelligence ──►
+```
+
+My current work focuses on **practical security engineering**: turning raw events into useful detections, enriching alerts with threat intelligence, automating response workflows, and building AI-assisted tools that remain explainable and permission-aware.
+
+---
+
 # 🚀 Featured Projects
 
 > **Projects are ordered by cybersecurity relevance and technical depth.**
