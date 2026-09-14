@@ -185,20 +185,15 @@ TELEMETRY / EVENTS
 
 ---
 
-## ⚡ Engineering Focus
+## 📊 Project Stack Graph
 
 <div align="center">
 
-| 🔎 DETECT | 🚨 RESPOND | 🤖 INTELLIGENT SYSTEMS | 🧩 BUILD |
-|:---:|:---:|:---:|:---:|
-| IDS / Network Security | SOAR / Playbooks | AI Agents / RAG | Python / FastAPI |
-| Detection Engineering | Threat Intelligence | Tool Calling | React / TypeScript |
-| Event Correlation | Incident Workflows | Security Automation | Docker / Linux |
-| Risk Scoring | Audit & Explainability | Permission-Aware Tools | APIs / Databases |
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/project-stack-graph.svg" width="100%" alt="Project stack graph" />
+
+**Technology footprint across the featured projects**
 
 </div>
-
-> **Build → Detect → Analyze → Respond → Defend**
 
 ---
 
