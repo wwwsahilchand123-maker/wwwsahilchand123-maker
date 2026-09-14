@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
+  <title id="title">Project Stack Graph</title>
+  <desc id="desc">Technology usage across Sahil Chand's featured GitHub projects.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1118"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#42e8a3"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="1" y="1" width="998" height="428" rx="24" fill="url(#bg)" stroke="#263241"/>
+  <text x="45" y="52" fill="#f8fafc" font-family="Arial, sans-serif" font-size="25" font-weight="700">⚡ Project Stack Graph</text>
+  <text x="45" y="79" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">Featured-project technology footprint · based on the profile project stack</text>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">
+    <text x="55" y="120">Python</text><text x="55" y="164">FastAPI</text><text x="55" y="208">React / TypeScript</text><text x="55" y="252">AI / RAG</text>
+    <text x="55" y="296">Cybersecurity</text><text x="55" y="340">Docker / Linux</text><text x="55" y="384">Web / JavaScript</text>
+  </g>
+
+  <g opacity="0.35" stroke="#475569">
+    <line x1="215" y1="100" x2="215" y2="397"/><line x1="395" y1="100" x2="395" y2="397"/><line x1="575" y1="100" x2="575" y2="397"/><line x1="755" y1="100" x2="755" y2="397"/><line x1="935" y1="100" x2="935" y2="397"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <text x="210" y="416">0</text><text x="390" y="416">2</text><text x="570" y="416">4</text><text x="750" y="416">6</text><text x="930" y="416">8</text>
+  </g>
+
+  <g fill="url(#bar)" filter="url(#glow)">
+    <rect x="215" y="106" width="720" height="22" rx="11"/><rect x="215" y="150" width="450" height="22" rx="11"/><rect x="215" y="194" width="450" height="22" rx="11"/><rect x="215" y="238" width="360" height="22" rx="11"/><rect x="215" y="282" width="360" height="22" rx="11"/><rect x="215" y="326" width="270" height="22" rx="11"/><rect x="215" y="370" width="450" height="22" rx="11"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#e2e8f0">
+    <text x="950" y="122">8 projects</text><text x="680" y="166">5</text><text x="680" y="210">5</text><text x="590" y="254">4</text><text x="590" y="298">4</text><text x="500" y="342">3</text><text x="680" y="386">5</text>
+  </g>
+  <text x="45" y="408" fill="#64748b" font-family="Arial, sans-serif" font-size="11">Counts indicate how many featured projects list or directly use the technology/category.</text>
+</svg>
