@@ -32,7 +32,6 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          from datetime import datetime
 
           data = json.loads(Path('contribution-data.json').read_text())
           if 'errors' in data:
@@ -41,24 +40,48 @@ jobs:
           total = cal['totalContributions']
           days = [d for w in cal['weeks'] for d in w['contributionDays']]
 
+          # Calculate current and longest daily contribution streaks from the
+          # same calendar data used to render the native-style contribution grid.
+          current = 0
+          for d in reversed(days):
+              if d['contributionCount'] > 0:
+                  current += 1
+              else:
+                  break
+
+          longest = 0
+          run = 0
+          for d in days:
+              if d['contributionCount'] > 0:
+                  run += 1
+                  longest = max(longest, run)
+              else:
+                  run = 0
+
           def esc(s):
               return str(s).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
 
           rects = []
           for i, d in enumerate(days[-371:]):
               x = 40 + (i % 53) * 15
-              y = 70 + (i // 53) * 15
+              y = 92 + (i // 53) * 15
               rects.append(f'<rect x="{x}" y="{y}" width="11" height="11" rx="2" fill="{d["color"]}"><title>{esc(d["date"])}: {d["contributionCount"]} contributions</title></rect>')
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="205" viewBox="0 0 900 205">
-          <rect width="900" height="205" rx="20" fill="#0d1117"/>
-          <rect x="1" y="1" width="898" height="203" rx="20" fill="none" stroke="#30363d"/>
-          <text x="40" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">GitHub Contributions</text>
-          <text x="40" y="59" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="14">{total} contributions in the last year</text>
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="225" viewBox="0 0 900 225">
+          <rect width="900" height="225" rx="20" fill="#0d1117"/>
+          <rect x="1" y="1" width="898" height="223" rx="20" fill="none" stroke="#30363d"/>
+          <text x="40" y="34" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">GitHub Contribution Activity</text>
+          <text x="40" y="57" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">Last 12 months</text>
+          <text x="285" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{total}</text>
+          <text x="320" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">total contributions</text>
+          <text x="535" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{current}</text>
+          <text x="565" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">day streak</text>
+          <text x="690" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{longest}</text>
+          <text x="725" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">longest</text>
           {''.join(rects)}
-          <text x="40" y="194" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">Less</text>
-          <rect x="75" y="184" width="11" height="11" rx="2" fill="#161b22"/><rect x="91" y="184" width="11" height="11" rx="2" fill="#0e4429"/><rect x="107" y="184" width="11" height="11" rx="2" fill="#006d32"/><rect x="123" y="184" width="11" height="11" rx="2" fill="#26a641"/><rect x="139" y="184" width="11" height="11" rx="2" fill="#39d353"/>
-          <text x="158" y="194" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">More</text>
+          <text x="40" y="214" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">Less</text>
+          <rect x="75" y="204" width="11" height="11" rx="2" fill="#161b22"/><rect x="91" y="204" width="11" height="11" rx="2" fill="#0e4429"/><rect x="107" y="204" width="11" height="11" rx="2" fill="#006d32"/><rect x="123" y="204" width="11" height="11" rx="2" fill="#26a641"/><rect x="139" y="204" width="11" height="11" rx="2" fill="#39d353"/>
+          <text x="158" y="214" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">More</text>
           </svg>'''
           Path('assets/contributions.svg').write_text(svg)
           PY
@@ -68,5 +91,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/contributions.svg
-          git diff --cached --quiet || git commit -m "chore: update contribution card"
+          git diff --cached --quiet || git commit -m "chore: refresh contribution metrics"
           git push
