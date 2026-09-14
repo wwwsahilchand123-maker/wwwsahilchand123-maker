@@ -1,4 +1,4 @@
-name: Update Contribution Card
+name: Update Contribution & Streak Graphs
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  update-contributions:
+  update-graphs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,7 +27,7 @@ jobs:
             -d '{"query":"query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount color}}}}}}","variables":{"login":"'"$USERNAME"'"}}' \
             https://api.github.com/graphql > contribution-data.json
 
-      - name: Render contribution SVG
+      - name: Render contribution and streak SVG
         run: |
           python - <<'PY'
           import json
@@ -40,8 +40,6 @@ jobs:
           total = cal['totalContributions']
           days = [d for w in cal['weeks'] for d in w['contributionDays']]
 
-          # Calculate current and longest daily contribution streaks from the
-          # same calendar data used to render the native-style contribution grid.
           current = 0
           for d in reversed(days):
               if d['contributionCount'] > 0:
@@ -58,38 +56,72 @@ jobs:
               else:
                   run = 0
 
+          recent = days[-30:]
+          recent_max = max([d['contributionCount'] for d in recent] + [1])
+
           def esc(s):
               return str(s).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
 
+          # Contribution calendar: last 371 days, native GitHub-style cells.
           rects = []
           for i, d in enumerate(days[-371:]):
-              x = 40 + (i % 53) * 15
-              y = 92 + (i // 53) * 15
-              rects.append(f'<rect x="{x}" y="{y}" width="11" height="11" rx="2" fill="{d["color"]}"><title>{esc(d["date"])}: {d["contributionCount"]} contributions</title></rect>')
+              x = 34 + (i % 53) * 15
+              y = 164 + (i // 53) * 15
+              rects.append(
+                  f'<rect x="{x}" y="{y}" width="11" height="11" rx="2" fill="{d["color"]}">'
+                  f'<title>{esc(d["date"])}: {d["contributionCount"]} contributions</title></rect>'
+              )
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="225" viewBox="0 0 900 225">
-          <rect width="900" height="225" rx="20" fill="#0d1117"/>
-          <rect x="1" y="1" width="898" height="223" rx="20" fill="none" stroke="#30363d"/>
-          <text x="40" y="34" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">GitHub Contribution Activity</text>
-          <text x="40" y="57" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">Last 12 months</text>
-          <text x="285" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{total}</text>
-          <text x="320" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">total contributions</text>
-          <text x="535" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{current}</text>
-          <text x="565" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">day streak</text>
-          <text x="690" y="36" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">{longest}</text>
-          <text x="725" y="36" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="13">longest</text>
+          # 30-day streak graph: filled bars show daily contribution activity.
+          bars = []
+          for i, d in enumerate(recent):
+              h = max(4, round((d['contributionCount'] / recent_max) * 70))
+              x = 500 + i * 13
+              y = 118 - h
+              opacity = 0.28 + 0.72 * (d['contributionCount'] / recent_max if recent_max else 0)
+              bars.append(
+                  f'<rect x="{x}" y="{y}" width="9" height="{h}" rx="3" fill="#42e8a3" opacity="{opacity:.2f}">'
+                  f'<title>{esc(d["date"])}: {d["contributionCount"]} contributions</title></rect>'
+              )
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1118"/><stop offset="1" stop-color="#111827"/></linearGradient>
+            <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#42e8a3"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+          </defs>
+          <rect x="1" y="1" width="998" height="428" rx="24" fill="url(#bg)" stroke="#263241"/>
+          <text x="34" y="42" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">GitHub Activity</text>
+          <text x="34" y="66" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="13">Contributions + streak analytics · automatically refreshed by GitHub Actions</text>
+
+          <rect x="34" y="82" width="126" height="55" rx="12" fill="#111a24" stroke="#263241"/>
+          <text x="48" y="105" fill="#42e8a3" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">{total}</text>
+          <text x="48" y="124" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">total contributions</text>
+          <rect x="172" y="82" width="126" height="55" rx="12" fill="#111a24" stroke="#263241"/>
+          <text x="186" y="105" fill="#38bdf8" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">{current}</text>
+          <text x="186" y="124" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">current streak</text>
+          <rect x="310" y="82" width="126" height="55" rx="12" fill="#111a24" stroke="#263241"/>
+          <text x="324" y="105" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">{longest}</text>
+          <text x="324" y="124" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="11">longest streak</text>
+
+          <text x="500" y="91" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">30-day streak graph</text>
+          <line x1="500" y1="118" x2="889" y2="118" stroke="#263241"/>
+          {''.join(bars)}
+          <text x="500" y="137" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="10">30 days ago</text>
+          <text x="850" y="137" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="10">today</text>
+
+          <text x="34" y="154" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">Contribution graph · last 12 months</text>
           {''.join(rects)}
-          <text x="40" y="214" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">Less</text>
-          <rect x="75" y="204" width="11" height="11" rx="2" fill="#161b22"/><rect x="91" y="204" width="11" height="11" rx="2" fill="#0e4429"/><rect x="107" y="204" width="11" height="11" rx="2" fill="#006d32"/><rect x="123" y="204" width="11" height="11" rx="2" fill="#26a641"/><rect x="139" y="204" width="11" height="11" rx="2" fill="#39d353"/>
-          <text x="158" y="214" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="12">More</text>
+          <text x="34" y="417" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">Less</text>
+          <rect x="68" y="407" width="11" height="11" rx="2" fill="#161b22"/><rect x="84" y="407" width="11" height="11" rx="2" fill="#0e4429"/><rect x="100" y="407" width="11" height="11" rx="2" fill="#006d32"/><rect x="116" y="407" width="11" height="11" rx="2" fill="#26a641"/><rect x="132" y="407" width="11" height="11" rx="2" fill="#39d353"/>
+          <text x="151" y="417" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">More</text>
           </svg>'''
           Path('assets/contributions.svg').write_text(svg)
           PY
 
-      - name: Commit updated card
+      - name: Commit updated graph
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/contributions.svg
-          git diff --cached --quiet || git commit -m "chore: refresh contribution metrics"
+          git diff --cached --quiet || git commit -m "chore: refresh contribution and streak graphs"
           git push
