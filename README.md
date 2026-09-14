@@ -185,17 +185,20 @@ TELEMETRY / EVENTS
 
 ---
 
-## 📈 Contribution Activity
+## ⚡ Engineering Focus
 
 <div align="center">
 
-<a href="https://github.com/wwwsahilchand123-maker">
-<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg" width="100%" alt="Live GitHub contribution activity" />
-</a>
-
-**Live total · automatically refreshed by GitHub Actions**
+| 🔎 DETECT | 🚨 RESPOND | 🤖 INTELLIGENT SYSTEMS | 🧩 BUILD |
+|:---:|:---:|:---:|:---:|
+| IDS / Network Security | SOAR / Playbooks | AI Agents / RAG | Python / FastAPI |
+| Detection Engineering | Threat Intelligence | Tool Calling | React / TypeScript |
+| Event Correlation | Incident Workflows | Security Automation | Docker / Linux |
+| Risk Scoring | Audit & Explainability | Permission-Aware Tools | APIs / Databases |
 
 </div>
+
+> **Build → Detect → Analyze → Respond → Defend**
 
 ---
 
