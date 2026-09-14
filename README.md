@@ -185,13 +185,13 @@ TELEMETRY / EVENTS
 
 ---
 
-## 📊 Project Stack Graph
+## 📈 Contribution & Streak Analytics
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/project-stack-graph.svg" width="100%" alt="Project stack graph" />
+<img src="https://raw.githubusercontent.com/wwwsahilchand123-maker/wwwsahilchand123-maker/main/assets/contributions.svg?v=3" width="100%" alt="GitHub contribution and streak analytics" />
 
-**Technology footprint across the featured projects**
+**Live contribution calendar · current streak · longest streak · 30-day activity graph**
 
 </div>
 
